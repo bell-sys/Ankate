@@ -78,6 +78,7 @@ public class ConfirmController extends HttpServlet {
         Map<String,String> answers = new HashMap<>();
         answers.put("ans1",request.getParameter("ans1"));
         answers.put("ans2",request.getParameter("ans2"));
+        answers.put("ans3",request.getParameter("ans3"));
         session.setAttribute("answers", answers);
 
         //healthCheckResult.jspにフォワード

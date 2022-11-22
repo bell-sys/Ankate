@@ -15,7 +15,8 @@
         <h1>☆アンケート入力内容の確認☆</h1>
             <form method="POST" action="FinishController">               
                 冬といえばクリスマスである：${sessionScope.answers.ans1}<br>
-                好きな食べ物ランキング１位はカレーである：${sessionScope.answers.ans2}<br>
+                好きな食べ物はカレーである：${sessionScope.answers.ans2}<br>
+                サッカーよりもバスケットが好き：${sessionScope.answers.ans3}<br>
             </form>
             
             <form method="POST">

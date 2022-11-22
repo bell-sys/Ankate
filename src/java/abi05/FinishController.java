@@ -88,6 +88,8 @@ public class FinishController extends HttpServlet {
         pw.print(answers.get("ans1"));
         pw.print("\t");
         pw.print(answers.get("ans2"));
+        pw.print("\t");
+        pw.print(answers.get("ans3"));        
         pw.println("");
         //ファイルを閉じる
         pw.close();

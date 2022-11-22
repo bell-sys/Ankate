@@ -12,7 +12,7 @@
         <title>アンケート入力</title>
     </head>
     <body>
-            <h1>☆イメージアンケート☆</h1>
+            <h1>☆アンケート☆</h1>
         <form method="POST" action="ConfirmController">               
             <div>冬といえばクリスマスである：
                 <label><input type="radio" name="ans1" value="はい" 
@@ -20,12 +20,21 @@
                 <label><input type="radio" name="ans1" value="いいえ"
                               ${sessionScope.answers.ans1 == "いいえ" ? "checked" : ""}>いいえ</label>
             </div>
-            <div>好きな食べ物ランキング１位はカレーである：
+            
+            <div>好きな食べ物はカレーである：
                 <label><input type="radio" name="ans2" value="はい"
                               ${sessionScope.answers.ans2 == "はい" ? "checked" : ""}>はい</label>
                 <label><input type="radio" name="ans2" value="いいえ"
                               ${sessionScope.answers.ans2 == "いいえ" ? "checked" : ""}>いいえ</label>
             </div>
+            
+            <div>サッカーよりもバスケットが好き：
+                <label><input type="radio" name="ans3" value="はい"
+                              ${sessionScope.answers.ans3 == "はい" ? "checked" : ""}>はい</label>
+                <label><input type="radio" name="ans3" value="いいえ"
+                              ${sessionScope.answers.ans3 == "いいえ" ? "checked" : ""}>いいえ</label>
+            </div>
+            
                 <input type="submit" value="OK">
             </form>
     </body>
