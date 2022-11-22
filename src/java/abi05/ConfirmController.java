@@ -81,7 +81,7 @@ public class ConfirmController extends HttpServlet {
         answers.put("ans3",request.getParameter("ans3"));
         session.setAttribute("answers", answers);
 
-        //healthCheckResult.jspにフォワード
+        //ConfirmView.jspにフォワード
         RequestDispatcher  dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/abi05/ConfirmView.jsp");//絶対パス
        dispatcher.forward(request,response);          
         

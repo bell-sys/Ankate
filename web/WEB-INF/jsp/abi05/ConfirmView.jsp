@@ -17,9 +17,7 @@
                 冬といえばクリスマスである：${sessionScope.answers.ans1}<br>
                 好きな食べ物はカレーである：${sessionScope.answers.ans2}<br>
                 サッカーよりもバスケットが好き：${sessionScope.answers.ans3}<br>
-            </form>
-            
-            <form method="POST">
+
                 <input type="submit" value="OK" formaction="FinishController">            
                 <input type="submit" value="戻る" formaction="AnkateController">                
             </form>
