@@ -75,7 +75,7 @@ public class FinishController extends HttpServlet {
         if(session.getAttribute("answers") != null){
         
         //FileWinter クラスのオブジェクトを生成する
-        FileWriter file = new FileWriter("c:\\temp\\ankate.text",true);
+        FileWriter file = new FileWriter("c:\\temp\\ankate.txt",true);
         //PrintWriterクラスのオブジェクトを生成する
         PrintWriter pw = new PrintWriter(new BufferedWriter(file));
         
@@ -93,13 +93,13 @@ public class FinishController extends HttpServlet {
         pw.println("");
         //ファイルを閉じる
         pw.close();
-        
-        session.removeAttribute("answers");
-        
+
         }
 
+        session.removeAttribute("answers");
         RequestDispatcher  dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/abi05/FinishView.jsp");//絶対パス
-       dispatcher.forward(request,response);            
+       dispatcher.forward(request,response);  
+                   
         
        
     }
